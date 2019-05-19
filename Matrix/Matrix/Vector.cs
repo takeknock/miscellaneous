@@ -28,5 +28,13 @@ namespace Matrix
         {
             Val = raw;
         }
+
+        public double this[int index]
+        {
+            get
+            {
+                return _vals[index];
+            }
+        }
     }
 }

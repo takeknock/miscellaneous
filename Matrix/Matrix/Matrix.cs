@@ -6,11 +6,11 @@ namespace Matrix
     {
         private double[,] _vals;
 
-        public int NRow
+        public int RowNum
         {
             get { return _vals.GetLength(1); }
         }
-        public int NCol
+        public int ColNum
         {
             get { return _vals.GetLength(0); }
         }
@@ -31,6 +31,18 @@ namespace Matrix
             Val = raw;
         }
 
+
+        public double this[int row, int col]
+        {
+            get
+            {
+                return _vals[row, col];
+            }
+            set
+            {
+                _vals[row, col] = value;
+            }
+        }
 
     }
 }

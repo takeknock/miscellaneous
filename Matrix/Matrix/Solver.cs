@@ -4,16 +4,10 @@ using System.Text;
 
 namespace Matrix
 {
-    public class Solver
+    public interface ISolver
     {
-        public Solver(Matrix A, Vector b)
-        {
 
-        }
+        double[] Solve(Matrix x, Vector y);
 
-        public double[] Solve()
-        {
-            return new double[] { 0, 0, 0 };
-        }
     }
 }
